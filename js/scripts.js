@@ -1,35 +1,27 @@
-function getCheckboxValues() {
-
+function getCheckboxValues(anyVarHere) {
   var checkboxValues = [];
-
-    $("input:checkbox[name=transportationModes]:checked").each(function() {
+    anyVarHere.each(function() {
       var checkboxValue = $(this).val();
-
-      // console.log(checkboxValue);
-      // debugger;
       checkboxValues.push(checkboxValue);
     });
-    // console.log(checkboxValues);
-    // console.log('got here yeah');
     return checkboxValues;
 };
 
-function displayCheckboxValues(checkedBoxesArray) {
-  $("#results").text(checkedBoxesArray);
-    console.log('got here');
-    console.log('checkedBoxesArray');
-    debugger;
-  $(".displayResults").toggle();
+function displayCheckboxValues(inputArray,destination,unHideDiv) {
+  $(destination).text(inputArray);
+  $(unHideDiv).show();
+  return 0;
 };
 
 $(document).ready(function() {
   $("form#surveyForm").submit(function(event) {
     event.preventDefault();
-
-    var surveyValues = getCheckboxValues();
-    // console.log(surveyValues);
-    displayCheckboxValues(surveyValues);
-
-
+    var someName = $("input")
+    var surveyValues = getCheckboxValues($("input:checkbox[name=transportationModes]:checked"));
+    var funValues = getCheckboxValues($("input:checkbox[name=transportationFun]:checked"));
+    $("form#surveyForm").addClass("hide");
+    
+    displayCheckboxValues(surveyValues,"#results",".displayResults1");
+    displayCheckboxValues(funValues,"#funResults",".displayResults2");
   });
 });

@@ -11,20 +11,32 @@
   </head>
   <body>
     <div class="container">
+      <header>
+        <h1>Transportation Survey!</h1>
+      </header>
+
       <form id="surveyForm">
         <div class="form-group">
-        <input type="checkbox" name="transportationModes" value="scooter">scooter<br>
-        <input type="checkbox" name="transportationModes" value="horse">horse<br>
-        <input type="checkbox" name="transportationModes" value="car">car<br>
-        <input type="checkbox" name="transportationModes" value="trimet">Trimet<br>
-        <input type="checkbox" name="transportationModes" value="iceskate">ice skates<br>
+        <h2>Which modes of transporation have you used in the last year?</h2>
+        <input type="checkbox" name="transportationModes" value=" scooter"> scooter<br>
+        <input type="checkbox" name="transportationModes" value=" horse"> horse<br>
+        <input type="checkbox" name="transportationModes" value=" car"> car<br>
+        <input type="checkbox" name="transportationModes" value=" trimet"> Trimet<br>
+        <input type="checkbox" name="transportationModes" value=" iceskate"> ice skates<br>
+        <h2>Which modes of transportation have you used for FUN in the last year?</h2>
+        <input type="checkbox" name="transportationFun" value=" Car"> Car<br>
+        <input type="checkbox" name="transportationFun" value=" Bike"> Bike<br>
 
-        <button type="submit" class="btn">Submit Survey</button>
+        <button type="submit" class="btn btn-lg btn-success">Submit Survey</button>
       </div>
       </form>
-      <div class="displayResults">
-        <p>Your modes of transportation are:</p>
+      <div class="displayResults1">
+        <h3>Your modes of transportation are:</h3>
         <p id="results"></p>
+      </div>
+      <div class="displayResults2">
+        <h3>Your fun modes of transportation are:</h3>
+        <p id="funResults"></p>
       </div>
 
 

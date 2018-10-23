@@ -1,3 +1,25 @@
-.displayResults {
+body {
+  font-size: 18px;
+  pdadding-bottom: 5em;
+}
+
+.displayResults1, .displayResults2, .hide {
   display: none;
+}
+
+header {
+  width: 90vw;
+  height: 60vh;
+  background-image: url(../img/highway.jpeg);
+  background-size: cover;
+  color: #ddd;
+  text-align: center;
+}
+
+#surveyForm {
+
+}
+
+button {
+  margin-top: 2em;
 }
