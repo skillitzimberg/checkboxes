@@ -3,17 +3,18 @@ body {
   pdadding-bottom: 5em;
 }
 
-.displayResults1, .displayResults2, .hide {
+.displayResults1, .displayResults2, .displayResults3, .hide {
   display: none;
 }
 
 header {
   width: 90vw;
   height: 60vh;
-  background-image: url(../img/highway.jpeg);
+  background-image: url(../img/scream.jpeg);
   background-size: cover;
-  color: #ddd;
+  color: #333;
   text-align: center;
+  border: 2px solid #333;
 }
 
 #surveyForm {

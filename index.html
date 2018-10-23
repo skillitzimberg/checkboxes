@@ -17,26 +17,51 @@
 
       <form id="surveyForm">
         <div class="form-group">
-        <h2>Which modes of transporation have you used in the last year?</h2>
-        <input type="checkbox" name="transportationModes" value=" scooter"> scooter<br>
-        <input type="checkbox" name="transportationModes" value=" horse"> horse<br>
-        <input type="checkbox" name="transportationModes" value=" car"> car<br>
-        <input type="checkbox" name="transportationModes" value=" trimet"> Trimet<br>
-        <input type="checkbox" name="transportationModes" value=" iceskate"> ice skates<br>
-        <h2>Which modes of transportation have you used for FUN in the last year?</h2>
-        <input type="checkbox" name="transportationFun" value=" Car"> Car<br>
-        <input type="checkbox" name="transportationFun" value=" Bike"> Bike<br>
+          <h2>Are you showing these warning signs of stress? Check all that apply.</h2>
+          <input type="checkbox" name="warningSigns" value=" Loss of sleep"> Loss of sleep<br>
+          <input type="checkbox" name="warningSigns" value=" Feeling overwhelmed"> Feeling overwhelmed<br>
+          <input type="checkbox" name="warningSigns" value=" Hair loss"> Hair loss<br>
+          <input type="checkbox" name="warningSigns" value=" Screaming"> Screaming<br>
+          <input type="checkbox" name="warningSigns" value=" Punching walls"> Punching walls<br>
+        </div>
+
+        <div class="form-group">
+          <h2>Are you exhibiting any of these stress symptoms? Check all that aplly.</h2>
+          <input type="checkbox" name="healthSymptoms" value="  High blood pressure"> High blood pressure<br>
+          <input type="checkbox" name="healthSymptoms" value=" Anxiety"> Anxiety<br>
+          <input type="checkbox" name="healthSymptoms" value=" Bad hygene"> Bad hygene<br>
+          <input type="checkbox" name="healthSymptoms" value=" Low energy"> Low energy<br>
+          <input type="checkbox" name="healthSymptoms" value=" No friends"> No friends<br>
+        </div>
+
+        <div class="form-group">
+          <h2>Are you using any or all of these stress reduction techniques? Check all that aplly.</h2>
+          <input type="checkbox" name="copingSkills" value=" Meditation"> Meditation<br>
+          <input type="checkbox" name="copingSkills" value=" Exercise"> Exercise<br>
+          <input type="checkbox" name="copingSkills" value=" Taking care of pets"> Taking care of pets<br>
+          <input type="checkbox" name="copingSkills" value=" Time management"> Time management<br>
+        </div>
 
         <button type="submit" class="btn btn-lg btn-success">Submit Survey</button>
-      </div>
       </form>
+
       <div class="displayResults1">
-        <h3>Your modes of transportation are:</h3>
-        <p id="results"></p>
+        <h3>You are reporting these sign and symptoms of stress:</h3>
+        <p id="results1"></p>
       </div>
+
       <div class="displayResults2">
-        <h3>Your fun modes of transportation are:</h3>
-        <p id="funResults"></p>
+        <h3>Considering your reported coping techniques we recommend that you take a look at these resources:</h3>
+        <p id="results2"></p>
+      </div>
+      <div class="displayResults3">
+        <h3>You are doing these great coping mechanisms:</h3>
+        <p id="results3"></p>
+      </div>
+
+      <div class="adviceAndResources">
+        <h3>You are doing these great coping mechanisms:</h3>
+        <p id="results4"></p>
       </div>
 
 
