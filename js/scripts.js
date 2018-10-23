@@ -1,17 +1,25 @@
 function getCheckboxValues() {
+
   var checkboxValues = [];
 
-   $("input:checkbox[name=transportationModes]:checked").each(function() {
-     var checkboxValue = $(this).val();
-     console.log(checkboxValue);
-     checkBoxValues.push(checkboxValue);
-   });
-   // console.log(checkboxValues);
-   return checkboxValues
+    $("input:checkbox[name=transportationModes]:checked").each(function() {
+      var checkboxValue = $(this).val();
+
+      // console.log(checkboxValue);
+      // debugger;
+      checkboxValues.push(checkboxValue);
+    });
+    // console.log(checkboxValues);
+    // console.log('got here yeah');
+    return checkboxValues;
 };
 
-function displayCheckboxValues() {
-  $("#result").text(checkboxValues)
+function displayCheckboxValues(checkedBoxesArray) {
+  $("#results").text(checkedBoxesArray);
+    console.log('got here');
+    console.log('checkedBoxesArray');
+    debugger;
+  $(".displayResults").toggle();
 };
 
 $(document).ready(function() {
@@ -19,6 +27,9 @@ $(document).ready(function() {
     event.preventDefault();
 
     var surveyValues = getCheckboxValues();
-    console.log(surveyValues);
+    // console.log(surveyValues);
+    displayCheckboxValues(surveyValues);
+
+
   });
 });
