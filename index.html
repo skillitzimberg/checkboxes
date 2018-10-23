@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="surveyForm">
+        <div class="form-group">
+        <input type="checkbox" name="transportionModes" value="scooter">scooter<br>
+        <input type="checkbox" name="transportionModes" value="horse">horse<br>
+        <input type="checkbox" name="transportionModes" value="car">car<br>
+        <input type="checkbox" name="transportionModes" value="trimet">Trimet<br>
+        <input type="checkbox" name="transportionModes" value="iceskate">ice skates<br>
+
+        <button type="submit" class="btn">Submit Survey</button>
+      </div>
+      </form>
+      <div class="displayResults">
+        <p>Your modes of transportation are:</p>
+        <p id="results"></p>
+      </div>
+
+
+    </div>
+  </body>
+</html>
